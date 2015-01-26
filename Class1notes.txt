@@ -1,0 +1,51 @@
+Be responsive to size of the screen using media queries, grid frameworks, and design patterns.
+
+Media query - adjusts based on size screen.
+
+
+.box {
+	width: 200px;
+	height: 200px;
+	background: red;
+}
+@media (max-width: 600px) {
+	.box {
+   
+	background: blue;
+}
+}
+
+320 - smallest number of pixels (this would be on a mobile device).
+
+Whenever you set something multiple times in css sheet, the style closest to bottom takes precedence.
+
+As you change the size, the layout of the page actually changes. 
+
+Start with the mobile aspect (called mobile first) and work towards a bigger screen.This allows for the most simple design first and then to expand as the screen becomes larger.
+
+How to determine what the breakpoints should be?
+- Most frequent resolutions.
+- Twitter bootstrap
+  - up to 768
+ - 768 - 992
+ - 992 - 1200
+ - 1200 and up
+
+getbootstrap.com - shows the twitter bootstrap.
+
+Why Mobile First?
+- Only load what you need.
+- Project will work on all devices
+
+mediaquery.es
+
+#block behaves like div
+#inline-block behaves like a hybrid
+#inline elements cannot have a width and a height
+
+Difference between float and in-line block is that float is pushing out of the flow of the page.
+
+Full size image
+Find browser width by including a google add on.
+
+margin: 0, auto * Only works if element has a width
